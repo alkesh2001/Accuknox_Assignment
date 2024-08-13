@@ -6,11 +6,8 @@ import { removeWidgetFromCategory } from '../store/auth'
 
     const dispatch = useDispatch()
 
-    console.log(widgetitems.id , categoryId)
-
     const handleremove = () =>{
       dispatch(removeWidgetFromCategory({categoryId, widgetId : widgetitems.id })) 
-      console.log(categoryId , widgetitems.id ,"remove")
     }
 
   return (

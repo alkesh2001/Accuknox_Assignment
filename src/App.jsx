@@ -10,19 +10,16 @@ import AddSide from './component/AddSide'
 function App() {
 
   const userData = useSelector(state => state.categories.categories)
-  console.log(userData)
   const [items , setItems] = useState()
 
   useEffect(()=>{
     setItems(userData)
   },[userData])
-  console.log(userData)
 
   const [show , setShow] = useState(false)
   
   const handleShowAside = () =>{
     setShow(showprev => !showprev)
-    console.log("handleshow work")
   }
 
   return (

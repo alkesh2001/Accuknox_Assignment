@@ -4,8 +4,6 @@ import AddCard from './AddCard'
 import { useSelector } from 'react-redux'
 function CataCard({items}) {
 
-   console.log(items)
-
   return (
         <div className='text-md font-medium overflow-x-scroll py-3'>
             <div className='px-6 py-3'>{items.name}</div>

@@ -16,7 +16,6 @@ function AddCard({categoryId}) {
 
   const addwidget =(e)=>{
     e.preventDefault()
-    console.log({categoryId,title,content})
     dispatch(addWidgetToCategory( {categoryId , title , content} ))
     setContent('')
     setTitle('')
