@@ -3,7 +3,7 @@ import {X} from "lucide-react"
 import { useState } from 'react'
 function AddSide({handleShowAside}) {
 
-    const [slide , setSlide] = useState('79px')
+    const [slide , setSlide] = useState('0px')
     const [slidewidth , setslidewidth] = useState('40px')
 
     const handleSlide = (newslide , newslidewidth) =>{
